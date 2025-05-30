@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start",
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,17 @@
   "type": "commonjs",
   "dependencies": {
     "bonjour": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^5.1.8",
+    "jasmine-core": "^5.7.1",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.1",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-dev-server": "^5.2.1"
   }
 }
